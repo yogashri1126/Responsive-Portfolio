@@ -197,88 +197,187 @@ footer {
     width: 100%;
 }
 
-@media screen and (max-width:980px){
+/*@media screen and (max-width:980px){
 
-  body{width:auto;}
+  body{width:max-width;}
   header{width:auto;
     text-align:center;}
 
-  #Messaging, #AboutMe, #Portfolio, #full{width:auto;}
+ #Portfolio, #full{width:auto;}
+ #AboutMe, #Messaging{width:50%;}
+  #Messaging{float:left;}
 
-}
+}*/
 
-@media screen and (max-width:979px) and (min-width:768px){
+@media screen and (max-width:980px){
 
  header{width:auto;
-    text-align:center;}
+    text-align:center;
+    margin:auto;}
+
   body{width:auto;}
-#AboutMe, #Portfolio, #Messaging, #full{width:auto;}
 
-#Messaging{margin-left:3px;}
+#AboutMe{width:50%;}
+#Portfolio {width:60%;}
+#full{align-content:center;
+  width:100%;}
+#Messaging{float:left;
+margin:10px;}
 
-#links{
-float:right;}
-
-}
-
-
-
-@media screen and (max-width:768px) and (min-width:640px) {
-
-header{width:auto;
-    text-align:center;}
-
-body{width:auto;}
+.container{width:50%;}
 
 #links{
 float:right;
+padding:0px;
+font-size:10pt;}
+
+#stack{margin-left:auto;
+float:left;}
+
 }
 
-#AboutMe, #Portfolio, #full{
-width:auto;
+/*@media screen and (max-width:783px){
+
+  header{width:auto;
+    text-align:center;
+    margin:auto;}
+
+  body{width:auto;}
+
+#AboutMe{width:50%;}
+#Portfolio {width:60%;}
+#full{align-content:center;
+  width:100%;}
+#Messaging{float:left;}
+
+.container{width:50%;}
+
+#links{
+float:right;
+padding:0px;
+font-size:10pt;}
+
+#stack{margin-left:auto;
+float:left;}}*/
+
+@media screen and (max-width:768px){
+
+header{width:100%;
+    text-align:center;
+    margin:auto;}
+
+body{width:auto;
+padding:1%;
+margin:1%;}
+
+h1{font-size:24px;}
+
+#stack{width:45%;
+  font:24px;
+  margin-left:auto;
+float:left;}
+
+#links{width:40%;
+float:right;
+padding:0px
+font-size:10pt;
+}
+
+#AboutMe, #Portfolio, #full, .container{
+width:100%;
 }
 
 #Messaging{width:100%;
-margin-left:3px;}
+float:left;
+margin:3px;
+}
 
 
-.bio-image{width:400px;
+.bio-image{width:85%;
 height:auto;}
 }
+
+/*@media screen and (max-width:690px)
+{header{width:100%;
+    text-align:center;
+    margin:auto;}
+
+body{width:auto;
+padding:1%;
+margin:1%;}
+
+h1{font-size:24px;}
+
+#stack{width:50%;
+  font:24px;
+  margin-left:auto;
+float:left;}
+
+#links{width:40%;
+float:right;
+padding:0px
+font-size:10pt;
+}
+
+#AboutMe, #Portfolio, #full, .container{
+width:100%;
+}
+
+.container{width:auto;}
+
+#Messaging{width:100%;
+float:left;
+margin:3px;
+}
+
+
+.bio-image{width:85%;
+height:auto;}}*/
 
 @media screen and (max-width:640px) {
 
 body, header{
   width:auto;
-  text-align:center;}
+  text-align:center;
+}
 
 header{position:static;
   clear:both;
   margin:auto;
+  padding:0px;
+  border-bottom:hidden;
+  background:#4aaaa5;
+
 }
+h1{font-size:24px;
+text-align:center;}
 
 #stack {
-  width:auto;
+  width:100%;
   text-align:center;
   clear: both;
   margin:auto;
-  padding:40px;
-
+  padding:5%;
 }
 
 #AboutMe, #Portfolio, #full{
 width:auto;}
 
+#AboutMe{font-size:16px;}
+
 #Messaging{width: 100%;
   margin-left:3px;}
 
 #links{
+  width:100%;
 background-color:#ffffff;
 text-align:center;
 clear:both;
-padding:0 100px 0 100px;
+padding:1%;
+margin:auto;
+border-bottom: 6px solid #777777;
 }
 
-.bio-image{width:400px;
+.bio-image{width:80%;
 height:auto;}
 }
